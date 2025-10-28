@@ -1,0 +1,9 @@
+# ide
+.idea/
+
+# Hugo
+.hugo_build.lock
+public/
+.hugo_cache/
+
+themes/
