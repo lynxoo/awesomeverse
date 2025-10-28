@@ -78,6 +78,7 @@ jobs:
           restore-keys:
             hugo-
       - name: Build the site
+        working-directory: awesomeverse
         run: |
           hugo \
             --gc \
@@ -93,7 +94,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: .awesomeverse/public
   deploy:
     environment:
       name: github-pages
