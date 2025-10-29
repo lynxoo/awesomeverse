@@ -3,9 +3,44 @@ languageCode = 'en-us'
 title = 'awesomeverse'
 
 [caches]
-    [caches.images]
-        dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [module]
-    [[module.imports]]
-        path = 'github.com/imfing/hextra'
+[[module.imports]]
+path = 'github.com/imfing/hextra'
+
+enableGitInfo = true
+
+[params]
+displayUpdatedDate = true
+dateFormat = "January 2, 2006"
+#defaultColorMode = "dark"
+breadcrumbs = false
+
+[params.search]
+enable = true        # 🔥 włącza search
+placeholder = "Search the Awesomeverse..."
+maxResults = 20
+
+
+
+# ----------------------------------------
+# Navbar links
+# ----------------------------------------
+[menu]
+
+[[menu.main]]
+name = "Home"
+url = "/docs/"
+weight = 1
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/lynxoo/awesomeverse"
+weight = 2
+
+[[menu.main]]
+name = "Search"
+weight = 4
+params = {"type"= "search"}

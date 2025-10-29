@@ -1,8 +1,7 @@
 ---
-title: "Awesomeverse"
-layout: page
+title: "Redirect"
+layout: redirect
+redirectURL: "/docs/"
 ---
 
-# Awesomeverse
-
-- [python](python/)
+Redirecting to [Awesomeverse Docs](/docs/)...
