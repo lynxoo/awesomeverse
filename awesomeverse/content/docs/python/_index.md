@@ -4,19 +4,22 @@ layout: docs
 weight: 10
 ---
 
+🐍 Quick picks from my Python toolbox — frameworks, ORMs, linters, and utilities I actually use. Curated, minimal, and evolving. ✨
+
 ### Web Frameworks
 - [Django](https://www.djangoproject.com/)
 - [Django REST Framework](https://www.django-rest-framework.org/)
-- [Django Ninja](https://https://django-ninja.dev/)
+- [Django Ninja](https://django-ninja.dev/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 
 ### ORM
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Pony ORM](https://ponyorm.org/)
 - [Ormar](https://collerek.github.io/ormar/)
+- [SQLModel](https://sqlmodel.tiangolo.com/) :star: - asynchronous ORM built on SQLAlchemy and Pydantic
 
 ### DTO & Data Validation
-- [Pydantic](https://pydantic.dev/)
+- [Pydantic](https://pydantic.dev/) :star: - data validation and settings management using Python type annotations
 
 ### Logging
 - [loguru](https://loguru.readthedocs.io/en/stable/)
@@ -31,11 +34,11 @@ weight: 10
 - [ruff](https://beta.ruff.rs/)
 
 ### Security
-- [bandit](https://bandit.readthedocs.io/en/latest/)
-- [pysafty](https://pysafty.org/)
-- [pip-check](https://pypi.org/project/pip-check/)
+- [Bandit](https://bandit.readthedocs.io/en/latest/)
+- [Safety](https://pypi.org/project/safety/)
+- [pip-audit](https://pypi.org/project/pip-audit/)
 
-### Intearctive Shells
+### Interactive Shells
 - [BPython](https://bpython.dev/)
 
 ### Environment & Dependency Management

@@ -1,6 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'awesomeverse'
+enableEmoji = true
+enableGitInfo = true
 
 [caches]
 [caches.images]
@@ -10,12 +12,9 @@ dir = ':cacheDir/images'
 [[module.imports]]
 path = 'github.com/imfing/hextra'
 
-enableGitInfo = true
-
 [params]
 displayUpdatedDate = true
 dateFormat = "January 2, 2006"
-#defaultColorMode = "dark"
 breadcrumbs = false
 
 [params.search]
