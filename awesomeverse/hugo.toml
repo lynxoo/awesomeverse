@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'lynxoo.github.io/awesomeverse/'
 languageCode = 'en-us'
 title = 'awesomeverse'
 enableEmoji = true
@@ -26,9 +26,9 @@ maxResults = 20
 displayTitle = true
 displayLogo = true
 [params.navbar.logo]
-path = "/images/logo.png"
-dark = "/images/logo.png"
-link = "/"
+path = "/awesomeverse/images/logo.png"
+dark = "/awesomeverse/images/logo.png"
+link = "/awesomeverse/"
 width = 50
 height = 50
 

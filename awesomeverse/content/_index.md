@@ -1,7 +1,7 @@
 ---
 title: "Redirect"
 layout: redirect
-redirectURL: "/docs/"
+redirectURL: "/awesomeverse/docs/"
 ---
 
-Redirecting to [Awesomeverse Docs](/docs/)...
+Redirecting to [Awesomeverse Docs](/awesomeverse/docs/)...
