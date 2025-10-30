@@ -23,7 +23,15 @@ enable = true        # 🔥 włącza search
 placeholder = "Search the Awesomeverse..."
 maxResults = 20
 
-
+[params.navbar]
+displayTitle = true
+displayLogo = true
+[params.navbar.logo]
+path = "/images/logo.png"
+dark = "/images/logo.png"
+link = "/"
+width = 50
+height = 50
 
 # ----------------------------------------
 # Navbar links
