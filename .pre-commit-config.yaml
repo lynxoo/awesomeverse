@@ -14,7 +14,6 @@ repos:
       - id: check-yaml
       - id: check-toml
       - id: check-json
-        args: ["--allow-missing-keys"]
       - id: check-added-large-files
         args: ["--maxkb=2048"]
         exclude: "(^public/|^resources/|\\.(png|jpe?g|gif|svg|webp|mp4|mov)$)"
@@ -26,13 +25,14 @@ repos:
       - id: prettier
         files: "\\.(md|markdown|html|css|scss|js|json|ya?ml)$"
 
-  # Lint Markdown style rules; if you have `.markdownlint.jsonc`, keep the --config line
+  # Lint Markdown style rules; if you have `.markdownlint.json`, keep the --config line
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.41.0
     hooks:
       - id: markdownlint
         files: "\\.(md|markdown)$"
-        # args: ["--config", ".markdownlint.jsonc"]
+        args: ["--fix"]
+        # args: ["--config", ".markdownlint.json"]
 
   # Spell-check common typos while skipping generated/vendor paths
   - repo: https://github.com/codespell-project/codespell
