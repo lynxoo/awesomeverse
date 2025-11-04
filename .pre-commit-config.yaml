@@ -1,0 +1,66 @@
+# .pre-commit-config.yaml
+minimum_pre_commit_version: "3.7.0"
+
+# Avoid running hooks on Hugo build artifacts and vendor folders
+exclude: ^(public|resources|node_modules|.git|.hugo_build)/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+        args: ["--allow-missing-keys"]
+      - id: check-added-large-files
+        args: ["--maxkb=2048"]
+        exclude: "(^public/|^resources/|\\.(png|jpe?g|gif|svg|webp|mp4|mov)$)"
+
+  # Format Markdown, HTML, YAML, JSON (skip TOML to avoid extra plugins)
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        files: "\\.(md|markdown|html|css|scss|js|json|ya?ml)$"
+
+  # Lint Markdown style rules; if you have `.markdownlint.jsonc`, keep the --config line
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+      - id: markdownlint
+        files: "\\.(md|markdown)$"
+        # args: ["--config", ".markdownlint.jsonc"]
+
+  # Spell-check common typos while skipping generated/vendor paths
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+      - id: codespell
+        args:
+          - "--ignore-words-list=crate,teh"
+          - "--skip=public,resources,node_modules,package-lock.json"
+        exclude: "\\.(svg|png|jpe?g|webp|gif|lock)$"
+
+  # Check links in Markdown and HTML; use --offline to avoid flaky network checks
+  - repo: https://github.com/lycheeverse/lychee
+    rev: v0.15.1
+    hooks:
+      - id: lychee
+        args:
+          - "--no-progress"
+          - "--offline"
+        files: "\\.(md|markdown|html)$"
+
+  # Optional: local Hugo build to ensure the site builds cleanly (requires `hugo` on PATH)
+  - repo: local
+    hooks:
+      - id: hugo-build
+        name: hugo build (fail on warnings)
+        entry: bash -lc "cd awesomeverse && hugo --gc --minify --panicOnWarning --quiet"
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit]
