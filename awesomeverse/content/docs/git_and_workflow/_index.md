@@ -18,6 +18,9 @@ weight: 60
 
 ### Engineering Practices
 
+- [Make a README](https://www.makeareadme.com/) - A guide to creating a good README file for your project.
+- [Use Mermaid](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/) - How to include
+  diagrams in Markdown/README files using Mermaid syntax on GitHub.
 - [Google's Engineering Practices](https://google.github.io/eng-practices/) - A comprehensive guide to engineering
   practices at Google (code review).
 - [YAGNI](https://martinfowler.com/bliki/Yagni.html) - "You Aren't Gonna Need It" - a principle of extreme programming
