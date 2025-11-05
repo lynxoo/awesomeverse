@@ -5,14 +5,24 @@ description: "Hand‑picked resources I revisit: blogs, design patterns, and You
 weight: 20
 ---
 
-🧭 Curated picks I keep coming back to — high‑signal blogs, patterns, and channels that level up my day‑to‑day. Updated as I learn. ✨
+🧭 Curated picks I keep coming back to — high‑signal blogs, patterns, and channels that level up my day‑to‑day.
+Updated as I learn. ✨
 
 ### Blogs
+
 - [Martin Fowler](https://martinfowler.com/)
+- [CleanCoder by Uncle Bob](https://blog.cleancoder.com/)
 
 ### Design Patterns
+
 - [Refactoring Guru - Go Design Patterns](https://refactoring.guru/design-patterns/)
 
 ### YouTube Channels
+
 - [ArjanCodes](https://www.youtube.com/@ArjanCodes) - focused on Python
 - [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)
+
+### Platforms for practice
+
+- [CodeWars](https://www.codewars.com/) - coding challenges in various languages.
+- [LeetCode](https://leetcode.com/) - coding challenges and interview prep.
